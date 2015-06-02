@@ -1,0 +1,27 @@
+<!-- left-nav.jsp -->
+<div class="col-md-3 well">
+    <ul>
+        {{#each menu}}
+            {{#if this.url}}
+        <li><a href="{{this.url}}">{{this.name}}</a>
+            {{else}}
+        <li>{{this.name}}
+            {{/if}}
+
+            {{#if this.menu}}
+            <ul>
+                {{#each this.menu}}
+                    {{#if this.url}}
+                <li><a href="{{this.url}}">{{this.name}}</a></li>
+                    {{else}}
+                <li>{{this.name}}</li>
+                    {{/if}}
+                {{/each}} 
+            </ul>
+            {{/if}}
+        </li>
+        {{/each}} 
+    </ul>
+    
+</div>
+<!-- /left-nav.jsp -->

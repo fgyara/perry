@@ -1,0 +1,17 @@
+{
+    "menu" : [
+        { 
+            "name": "Personal", 
+            "url": "./person.html", 
+            "menu": [
+                { "name": "Personal - 1", "url": "#x" },
+                { "name": "Personal - 2" }
+            ]
+        },
+        { 
+            "name": "Business", 
+            "url": "#y" 
+            },
+        { "name": "Government" }
+    ]
+}
