@@ -1,0 +1,13 @@
+{
+    "page" : "Page 2",
+    "slots" : [
+        { "id": "slot-1", 
+          "template": "./templates/slot-1.html", 
+          "data" : "./assets/slot-1.json" },
+        { "id": "slot-2", 
+          "template": "./templates/slot-1.html"},
+        { "id": "slot-3", 
+          "template": "./templates/slot-3.html", 
+          "data" : "./assets/slot-3.json" }
+    ]
+}

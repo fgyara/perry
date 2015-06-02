@@ -1,0 +1,44 @@
+<div id="title-bar"  data-perry-template="./templates/title-bar.html" data-perry-data="./assets/title-bar-1.json">
+    Some day, someone will populate me!
+</div>
+
+<div id="jumbotron"  data-perry-template="./templates/jumbotron.html" data-perry-data="./assets/jumbotron-1.json">
+    Some day, someone will populate me!
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <div id="left-nav"  data-perry-template="./templates/left-nav.html" data-perry-data="./assets/left-nav-1.json">
+            Some day, someone will populate me!
+        </div>
+
+        <div class="col-md-3 well">
+            Current Page: {{page}} <br/>
+            Goto:  <br/>
+            <a href="#!p1"> Page 1 </a> <br/>
+            <a href="#!p2"> Page 2 </a> <br/>
+            <a href="#!p3"> Page 3 </a> <br/>
+        </div>
+        
+        
+        <div id="static-template"  data-perry-template="./templates/static.html">
+            
+        </div>
+        
+        {{#each slots}}
+        <div id="{{this.id}}"  data-perry-template="{{this.template}}" data-perry-data="{{this.data}}">
+            Some day, someone will populate me!
+        </div>
+        {{/each}}          
+        
+
+    </div> <!-- /row -->
+
+    <hr>
+    <div id="footer"  data-perry-template="./templates/footer.html" data-perry-data="./assets/footer-1.json">
+        Some day, someone will populate me!
+    </div>
+
+</div> <!-- /container -->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="./script/handlebars-v3.0.3.js"></script>
+    </head>
+    
+    <body>
+        <script id="entry-template" type="text/x-handlebars-template">
+  <div style="well" class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+</script>
+
+<script>
+        var source   = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+        var context = {title: "My New Post", body: "This is my first post!"};
+    var html    = template(context);
+alert(html);
+</script>
+
+        <div>TODO write content</div>
+    </body>
+</html>

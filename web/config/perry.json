@@ -1,0 +1,8 @@
+{
+    "config": {
+        "#" : {"template" : "./templates/page.html", "data" : "./assets/page-1.json"},
+        "#!p1" : {"template" : "./templates/page.html", "data" : "./assets/page-2.json"},
+        "#!p2" : {"template" : "./templates/page.html", "data" : "./assets/page-2.json"},
+        "#!p3" : {"template" : "./templates/page.html", "data" : "./assets/page-3.json"}
+    }
+}
